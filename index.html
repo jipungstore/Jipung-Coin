@@ -119,13 +119,6 @@
     position:relative; z-index:1;
     display:grid; grid-template-columns:1.05fr .95fr; gap:40px; align-items:center;
   }
-  .eyebrow-tag{
-    display:inline-flex; align-items:center; gap:8px;
-    font-size:.82rem; font-weight:600; color:var(--sky-700);
-    background:var(--sky-100); border:1px solid var(--sky-200);
-    padding:7px 14px; border-radius:999px; margin-bottom:22px;
-  }
-  .eyebrow-tag .dot{width:7px; height:7px; border-radius:50%; background:var(--sky-500); box-shadow:0 0 0 4px rgba(14,165,233,.2);}
   .hero h1{
     font-size:clamp(2.6rem, 5.2vw, 4.1rem);
     font-weight:800; letter-spacing:-.02em;
@@ -140,7 +133,7 @@
     background:#fff; border:1px solid var(--line); border-radius:var(--radius-sm);
     padding:14px 18px; min-width:150px;
   }
-  .info-chip .label{font-size:.74rem; text-transform:uppercase; letter-spacing:.06em; color:var(--ink-soft); font-weight:600;}
+  .info-chip .label{font-size:.78rem; color:var(--ink-soft); font-weight:500;}
   .info-chip .value{font-family:'Sora'; font-weight:700; color:var(--navy); font-size:1.02rem; margin-top:4px;}
   .hero-actions{display:flex; gap:14px; margin-top:38px; flex-wrap:wrap;}
   .btn{
@@ -158,9 +151,7 @@
     position:absolute; width:380px; height:380px; border-radius:50%;
     background:radial-gradient(circle, rgba(14,165,233,.35), rgba(14,165,233,0) 70%);
     filter:blur(4px); z-index:0;
-    animation:pulse 5s ease-in-out infinite;
   }
-  @keyframes pulse{ 0%,100%{transform:scale(1);} 50%{transform:scale(1.08);} }
   .coin-3d{
     position:relative; z-index:1; width:min(360px, 70%);
     animation:float 5.5s ease-in-out infinite;
@@ -218,7 +209,7 @@
     position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; z-index:1;
   }
   .donut-center .num{font-family:'Sora'; font-weight:800; font-size:1.5rem; color:var(--navy);}
-  .donut-center .txt{font-size:.72rem; color:var(--ink-soft); font-weight:600; letter-spacing:.04em;}
+  .donut-center .txt{font-size:.76rem; color:var(--ink-soft); font-weight:500;}
   .token-list{display:flex; flex-direction:column; gap:0;}
   .token-row{
     display:flex; align-items:center; justify-content:space-between;
@@ -293,8 +284,8 @@
     border-radius:var(--radius-sm); padding:18px 20px;
   }
   .tech-adv .dotnum{
-    width:34px; height:34px; border-radius:50%; background:var(--navy); color:#fff;
-    display:flex; align-items:center; justify-content:center; font-family:'Sora'; font-weight:700; font-size:.85rem; flex-shrink:0;
+    width:34px; height:34px; border-radius:50%; background:var(--sky-100); color:var(--sky-700);
+    display:flex; align-items:center; justify-content:center; flex-shrink:0;
   }
   .tech-adv h4{font-size:.98rem; margin-bottom:3px;}
   .tech-adv p{font-size:.88rem;}
@@ -346,7 +337,7 @@
 
 <nav class="nav">
   <div class="nav-inner">
-    <a href="#top" class="brand"><img src="Jipung%20coin%202D.png" alt="Logo JIPUNG Coin">JIPUNG Coin</a>
+    <a href="#top" class="brand"><img src="JIP2D.png" alt="Logo JIPUNG Coin">JIPUNG Coin</a>
     <ul class="nav-links" id="navLinks">
       <li><a href="#tentang">Tentang</a></li>
       <li><a href="#tokenomics">Tokenomics</a></li>
@@ -355,7 +346,7 @@
       <li><a href="#technology">Technology</a></li>
       <li><a href="#whitepaper">Whitepaper</a></li>
     </ul>
-    <a class="nav-cta" href="Whitepaper%20v1.0.pdf" target="_blank" rel="noopener">Whitepaper</a>
+    <a class="nav-cta" href="whitepaper.html" target="_blank" rel="noopener">Whitepaper</a>
     <button class="burger" id="burgerBtn" aria-label="Buka menu" aria-expanded="false" aria-controls="navLinks">
       <span></span><span></span><span></span>
     </button>
@@ -366,7 +357,6 @@
   <div class="node-field" id="nodeField"></div>
   <div class="wrap hero-grid">
     <div class="hero-copy">
-      <span class="eyebrow-tag"><span class="dot"></span>BNB Smart Chain · BEP-20</span>
       <h1>JIPUNG Coin</h1>
       <p class="slogan">Building the future, one step at a time.</p>
 
@@ -386,14 +376,14 @@
       </div>
 
       <div class="hero-actions">
-        <a class="btn btn-primary" href="Whitepaper%20v1.0.pdf" target="_blank" rel="noopener">Whitepaper</a>
+        <a class="btn btn-primary" href="whitepaper.html" target="_blank" rel="noopener">Whitepaper</a>
         <a class="btn btn-outline" href="#tokenomics">Tokenomics</a>
       </div>
     </div>
 
     <div class="hero-visual">
       <div class="glow-orb"></div>
-      <img class="coin-3d" src="Jipung%20coin%203D.png" alt="Koin JIPUNG 3D">
+      <img class="coin-3d" src="JIP3D.png" alt="Koin JIPUNG 3D">
     </div>
   </div>
 </header>
@@ -439,7 +429,7 @@
         <div class="donut">
           <div class="donut-center">
             <div class="num">59M</div>
-            <div class="txt">TOTAL SUPPLY</div>
+            <div class="txt">Total Supply</div>
           </div>
         </div>
       </div>
@@ -530,7 +520,7 @@
 
       <div class="rm-item">
         <div class="rm-card">
-          <div class="rm-phase">PHASE 1</div>
+          <div class="rm-phase">Phase 1</div>
           <h3>Foundation</h3>
           <p>Riset pasar, penyusunan konsep proyek, dan pembentukan tim inti.</p>
         </div>
@@ -542,7 +532,7 @@
         <div></div>
         <div class="rm-dot-col"><span class="rm-dot"></span></div>
         <div class="rm-card">
-          <div class="rm-phase">PHASE 2</div>
+          <div class="rm-phase">Phase 2</div>
           <h3>Token Development</h3>
           <p>Pengembangan smart contract JIP di BNB Smart Chain beserta audit keamanan.</p>
         </div>
@@ -550,7 +540,7 @@
 
       <div class="rm-item">
         <div class="rm-card">
-          <div class="rm-phase">PHASE 3</div>
+          <div class="rm-phase">Phase 3</div>
           <h3>Community Building</h3>
           <p>Membangun komunitas melalui media sosial dan program-program awal.</p>
         </div>
@@ -562,7 +552,7 @@
         <div></div>
         <div class="rm-dot-col"><span class="rm-dot"></span></div>
         <div class="rm-card">
-          <div class="rm-phase">PHASE 4</div>
+          <div class="rm-phase">Phase 4</div>
           <h3>Launch &amp; Liquidity</h3>
           <p>Peluncuran token JIP dan penyediaan likuiditas di exchange terdesentralisasi.</p>
         </div>
@@ -570,7 +560,7 @@
 
       <div class="rm-item">
         <div class="rm-card">
-          <div class="rm-phase">PHASE 5</div>
+          <div class="rm-phase">Phase 5</div>
           <h3>Ecosystem Development</h3>
           <p>Pengembangan ekosistem lanjutan dan penjajakan kemitraan strategis.</p>
         </div>
@@ -590,19 +580,19 @@
       <p>JIPUNG Coin direncanakan berjalan di jaringan BNB Smart Chain (BEP-20).</p>
       <div class="tech-badges">
         <div class="tech-adv">
-          <div class="dotnum">1</div>
+          <div class="dotnum"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></div>
           <div><h4>Biaya transaksi rendah</h4><p>Efisien untuk transaksi sehari-hari.</p></div>
         </div>
         <div class="tech-adv">
-          <div class="dotnum">2</div>
+          <div class="dotnum"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></div>
           <div><h4>Transaksi cepat</h4><p>Waktu konfirmasi yang singkat.</p></div>
         </div>
         <div class="tech-adv">
-          <div class="dotnum">3</div>
+          <div class="dotnum"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></div>
           <div><h4>Kompatibel EVM</h4><p>Terhubung dengan standar Ethereum Virtual Machine.</p></div>
         </div>
         <div class="tech-adv">
-          <div class="dotnum">4</div>
+          <div class="dotnum"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></div>
           <div><h4>Ekosistem luas</h4><p>Akses ke jaringan DeFi dan dApps yang berkembang.</p></div>
         </div>
       </div>
@@ -616,16 +606,16 @@
 
 <section class="wp-section" id="whitepaper">
   <div class="wrap wp-inner">
-    <img src="Jipung%20coin%202D.png" alt="Logo JIPUNG Coin">
+    <img src="JIP2D.png" alt="Logo JIPUNG Coin">
     <h2>Whitepaper JIPUNG Coin</h2>
     <p>Pelajari visi, tokenomics, dan roadmap lengkap JIPUNG Coin dalam dokumen whitepaper resmi.</p>
-    <a class="btn btn-primary" href="Whitepaper%20v1.0.pdf" target="_blank" rel="noopener">Download Whitepaper</a>
+    <a class="btn btn-primary" href="whitepaper.html" target="_blank" rel="noopener">Download Whitepaper</a>
   </div>
 </section>
 
 <footer>
   <div class="wrap footer-inner">
-    <img src="Jipung%20coin%202D.png" alt="Logo JIPUNG Coin">
+    <img src="JIP2D.png" alt="Logo JIPUNG Coin">
     <div class="footer-brand">JIPUNG Coin (JIP)</div>
     <div class="footer-slogan">Building the future, one step at a time.</div>
     <div class="footer-copy">Copyright © 2026 JIPUNG Coin</div>
@@ -651,7 +641,6 @@
   (function(){
     var field = document.getElementById('nodeField');
     if(!field) return;
-    var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     var w = 1200, h = 600;
     var svgNS = 'http://www.w3.org/2000/svg';
     var svg = document.createElementNS(svgNS, 'svg');
@@ -689,19 +678,11 @@
 
     var dotGroup = document.createElementNS(svgNS,'g');
     dotGroup.setAttribute('fill', '#38BDF8');
-    points.forEach(function(p, idx){
+    points.forEach(function(p){
       var c = document.createElementNS(svgNS,'circle');
       c.setAttribute('cx', p.x);
       c.setAttribute('cy', p.y);
       c.setAttribute('r', 2.4);
-      if(!reduceMotion){
-        var anim = document.createElementNS(svgNS,'animate');
-        anim.setAttribute('attributeName','opacity');
-        anim.setAttribute('values','0.25;1;0.25');
-        anim.setAttribute('dur', (3 + (idx % 5)) + 's');
-        anim.setAttribute('repeatCount','indefinite');
-        c.appendChild(anim);
-      }
       dotGroup.appendChild(c);
     });
     svg.appendChild(dotGroup);
